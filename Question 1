@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int a,b,c,d=0;
+  cin>>a;
+  int e,f,g,h=0;
+  cin>>e;
+  b=a;
+  for(int i=1;i<=a;i++){
+    if(b%i == 0)
+      d=d+i;
+  }
+  f=e;
+  for(int j=1;j<=e;j++){
+    if(f%j == 0)
+      h=h+j;
+  }
+  double x = d/a;
+  double y = h/e;
+  if(x == y){
+    cout<<"Friendly Pair";
+  }
+  else 
+    cout<<"Not Friendly Pair";
+}
