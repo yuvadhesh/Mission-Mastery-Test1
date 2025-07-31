@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+  int a,b,c=0;
+  cin>>a;
+  int temp;
+  temp = a;
+  for(int i=0;i<a;i++){
+  b=temp%10;
+  c+=b;
+  temp=temp/10;
+  } 
+  if(a%c == 0)
+   cout<<"Harshard Number";
+  else
+   cout<<"Not Harshard Number";
+  return 0; 
+}
